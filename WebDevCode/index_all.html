@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe Photography</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+}
+
+header {
+    background: #006d77;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header p {
+    color: #cfd9df;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 500px; /* Fixed height to ensure consistent image display */
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the area and maintain aspect ratio without distortion */
+    flex-shrink: 0; /* Prevents images from being squished */
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #006d77;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #005f69;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #005f69;
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe Photography</h1>
+        <p>Capturing Moments, Crafting Memories</p>
+        <nav>
+            <ul>
+                <li><a href="#landscape">Landscape</a></li>
+                <li><a href="#portrait">Portrait</a></li>
+                <li><a href="#urban">Urban</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Landscape Photography Section -->
+        <section id="landscape">
+            <h2>Landscape Photography</h2>
+            <div class="gallery-container">
+                <div class="gallery-slider">
+                    <img src="https://images.pexels.com/photos/2714581/pexels-photo-2714581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscape 1">
+                    <img src="https://images.pexels.com/photos/29278095/pexels-photo-29278095/free-photo-of-majestic-faroe-islands-mountain-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscape 2">
+                    <img src="https://images.pexels.com/photos/29390789/pexels-photo-29390789/free-photo-of-dramatic-coastal-landscape-of-the-faroe-islands.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscape 3">
+                    <img src="https://images.pexels.com/photos/2812697/pexels-photo-2812697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscape 4">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Portrait Photography Section -->
+        <section id="portrait">
+            <h2>Portrait Photography</h2>
+            <div class="gallery-container">
+                <div class="gallery-slider">
+                    <img src="https://images.pexels.com/photos/30284519/pexels-photo-30284519/free-photo-of-portrait-of-a-man-against-artistic-backdrop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait 1">
+                    <img src="https://images.pexels.com/photos/30298225/pexels-photo-30298225/free-photo-of-elderly-woman-smiling-indoors-with-thoughtful-expression.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait 2">
+                    <img src="https://images.pexels.com/photos/6689742/pexels-photo-6689742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait 3">
+                    <img src="https://images.pexels.com/photos/8638136/pexels-photo-8638136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait 4">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Urban Photography Section -->
+        <section id="urban">
+            <h2>Urban Photography</h2>
+            <div class="gallery-container">
+                <div class="gallery-slider">
+                    <img src="https://images.pexels.com/photos/30276966/pexels-photo-30276966/free-photo-of-rainy-day-view-from-montmartre-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Urban 1">
+                    <img src="https://images.pexels.com/photos/30276987/pexels-photo-30276987/free-photo-of-charming-paris-carousel-in-autumn-rain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Urban 2">
+                    <img src="https://images.pexels.com/photos/30276994/pexels-photo-30276994/free-photo-of-charming-parisian-street-in-autumn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Urban 3">
+                    <img src="https://images.pexels.com/photos/29389543/pexels-photo-29389543/free-photo-of-iconic-parisian-architecture-by-the-seine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Urban 4">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm John Doe, a professional photographer with over a decade of experience specializing in capturing the essence of life through my lens. Whether you're looking for stunning landscapes, intimate portraits, or vibrant urban scenes, I bring creativity and passion to every project.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div id="contact-info">
+                <p>Email: contact@johndoephotography.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Location: 123 Main St, Anytown, USA</p>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 John Doe Photography. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.next').forEach(btn => {
+    btn.onclick = () => slide(btn.parentNode, 'next');
+});
+
+document.querySelectorAll('.prev').forEach(btn => {
+    btn.onclick = () => slide(btn.parentNode, 'prev');
+});
+
+function slide(container, direction) {
+    let slider = container.querySelector('.gallery-slider');
+    let slideWidth = container.clientWidth; // Get the width of the container to move one full image width
+    let currentTransform = getComputedTransformX(slider);
+
+    if (direction === 'next') {
+        if (currentTransform > -(slider.scrollWidth - slideWidth)) {
+            slider.style.transform = `translateX(${currentTransform - slideWidth}px)`;
+        }
+    } else {
+        if (currentTransform < 0) {
+            slider.style.transform = `translateX(${currentTransform + slideWidth}px)`;
+        }
+    }
+}
+
+function getComputedTransformX(element) {
+    const style = window.getComputedStyle(element);
+    const matrix = new WebKitCSSMatrix(style.transform);
+    return matrix.m41; // horizontal translate
+}
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+}
+
+header {
+    background: #006d77;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header p {
+    color: #cfd9df;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 500px; /* Fixed height to ensure consistent image display */
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the area and maintain aspect ratio without distortion */
+    flex-shrink: 0; /* Prevents images from being squished */
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #006d77;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #005f69;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #005f69;
+    color: #ffffff;
+}
